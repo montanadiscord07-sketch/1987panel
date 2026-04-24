@@ -1,0 +1,49 @@
+.dns-zone-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.dns-zone-header {
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background .2s;
+}
+.dns-zone-header:hover { background: rgba(255,255,255,.02); }
+
+.dns-zone-name {
+  font-size: .88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dns-zone-body {
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  display: none;
+}
+.dns-zone-body.open { display: block; }
+
+.record-type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: .6rem;
+  font-weight: 700;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+.rt-A     { background: rgba(80,200,120,.1);  color: var(--green); }
+.rt-AAAA  { background: rgba(80,200,120,.1);  color: var(--green); }
+.rt-CNAME { background: rgba(100,160,255,.1); color: #64a0ff; }
+.rt-MX    { background: rgba(212,175,55,.1);  color: var(--gold); }
+.rt-TXT   { background: rgba(255,255,255,.06); color: var(--dim); }
+.rt-NS    { background: rgba(255,85,85,.1);   color: var(--red); }
+.rt-SRV   { background: rgba(180,100,255,.1); color: #b464ff; }

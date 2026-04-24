@@ -1,0 +1,31 @@
+.db-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  transition: border-color .2s;
+}
+.db-card:hover { border-color: rgba(212,175,55,.2); }
+.db-name { font-size: .9rem; font-weight: 700; }
+.db-meta { font-size: .65rem; color: var(--dim); margin-top: 4px; display: flex; gap: 12px; }
+.db-actions { display: flex; gap: 8px; }
+
+.cred-box {
+  background: rgba(212,175,55,.06);
+  border: 1px solid rgba(212,175,55,.2);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-top: 12px;
+  font-family: monospace;
+  font-size: .78rem;
+}
+.cred-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
+.cred-row:last-child { margin-bottom: 0; }
+.cred-label { color: var(--dim); }
+.cred-value { color: var(--gold); font-weight: 700; }

@@ -1,0 +1,45 @@
+.mail-domain-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.mail-domain-header {
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background .2s;
+}
+.mail-domain-header:hover { background: rgba(255,255,255,.02); }
+
+.mail-domain-name {
+  font-size: .88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mail-domain-body {
+  border-top: 1px solid var(--border);
+  padding: 16px 20px;
+  display: none;
+}
+.mail-domain-body.open { display: block; }
+
+.mail-account-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.04);
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.mail-account-row:last-child { border-bottom: none; }
+.mail-account-email { font-size: .82rem; font-weight: 600; color: var(--gold); }
+.mail-account-meta  { font-size: .65rem; color: var(--dim); }

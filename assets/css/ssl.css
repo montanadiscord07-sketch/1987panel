@@ -1,0 +1,32 @@
+.ssl-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  transition: border-color .2s;
+}
+.ssl-card.active  { border-color: rgba(80,200,120,.2); }
+.ssl-card.expired { border-color: rgba(255,85,85,.2); }
+.ssl-card.pending { border-color: rgba(212,175,55,.2); }
+
+.ssl-domain { font-size: .9rem; font-weight: 700; }
+.ssl-meta   { font-size: .65rem; color: var(--dim); margin-top: 4px; display: flex; gap: 12px; flex-wrap: wrap; }
+.ssl-actions { display: flex; gap: 8px; }
+
+.ssl-progress {
+  background: rgba(255,255,255,.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: .75rem;
+  color: var(--dim);
+  margin-top: 12px;
+  display: none;
+}
+.ssl-progress.show { display: block; }
